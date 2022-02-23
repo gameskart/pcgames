@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta onloadstart="dropMenuFuncRemove1(),dropMenuFuncRemove2(),dropMenuFuncRemove3(),stopMainMenu()"
+        http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GAMESKART</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script src="./js/carousel.js"></script>
+
+<body onload="dropMenuFuncRemove1(),dropMenuFuncRemove2(),dropMenuFuncRemove3(),stopMainMenu()"
+    onmouseleave="dropMenuFuncRemove1(),dropMenuFuncRemove2(),dropMenuFuncRemove3(),stopMainMenu()">
+    <div class="mainContainer">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+            onmousedown="dropMenuFuncRemove1(),dropMenuFuncRemove2(),dropMenuFuncRemove3(),stopMainMenu()"
+            onmouseleave="dropMenuFuncRemove1(),dropMenuFuncRemove2(),dropMenuFuncRemove3(),stopMainMenu()"><a
+                class="navbar-brand" href="./">GAMESKART</a> <button onclick="paddingAllItems()" class="navbar-toggler"
+                type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent">
+                <div id="nav-icon1"><span></span> <span></span> <span></span></div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"
+                        onmouseenter="dropMenuFuncRemove1(),dropMenuFuncRemove2(),stopMainMenu()"><a class="nav-link"
+                            href="./">HOME <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item dropdown"
+                        onmouseover="dropMenuFuncAdd1(),dropMenuFuncRemove2(),dropMenuFuncRemove3()"
+                        onload="dropMenuFuncRemove1()" id="dropdown1"><a class="nav-link dropdown-toggle" href="#"
+                            id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">SIZE</a>
+                        <div id="dropdown-Menu" class="dropdown-menu stop-menu1 remove-menu"
+                            onmouseleave="dropMenuFuncRemove1()"
+                            onclick="dropMenuFuncAdd1(),dropMenuFuncRemove2(),dropMenuFuncRemove3()"
+                            aria-labelledby="navbarDropdown1"><a class="dropdown-item" id="item" href="#">Adventure</a>
+                            <a class="dropdown-item" id="item" href="#">Puzzle</a><a class="dropdown-item" id="item"
+                                href="#">Action</a> <a class="dropdown-item" id="item" href="#">Sports</a> <a
+                                class="dropdown-item" id="item" href="#">Racing</a><a class="dropdown-item" id="item"
+                                href="#">Shooting</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown"
+                        onclick="dropMenuFuncRemove1(),dropMenuFuncAdd2(),dropMenuFuncRemove3()"
+                        onmouseover="dropMenuFuncRemove1(),dropMenuFuncAdd2(),dropMenuFuncRemove3()" id="dropdown2"><a
+                            class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PACKS</a>
+                        <div class="dropdown-menu menu-2 stop-menu2" onload="dropMenuFuncRemove2()"
+                            onmouseenter="stopMainMenu()" aria-labelledby="navbarDropdown2"><a class="dropdown-item"
+                                href="#">Adventure</a> <a class="dropdown-item" href="#">Puzzle</a><a
+                                class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Sports</a>
+                            <a class="dropdown-item" href="#">Racing</a><a class="dropdown-item" href="#">Shooting</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown"
+                        onmouseover="dropMenuFuncRemove1(),dropMenuFuncRemove2(),dropMenuFuncAdd3()" id="dropdown1"><a
+                            class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CATEGORIES</a>
+                        <div class="dropdown-menu menu-3 stop-menu3" onload="dropMenuFuncRemove3()"
+                            onmouseenter="stopMainMenu()" aria-labelledby="navbarDropdown1"><a class="dropdown-item"
+                                href="#">Adventure</a> <a class="dropdown-item" href="#">Puzzle</a><a
+                                class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Sports</a>
+                            <a class="dropdown-item" href="#">Racing</a><a class="dropdown-item" href="#">Shooting</a>
+                        </div>
+                    </li>
+                    <li class="nav-item" onmouseenter="dropMenuFuncRemove3()"><a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item login-btn"><a class="nav-link login" href="#">LOGIN</a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0"><input class="form-control mr-sm-2" type="search"
+                        placeholder="Search" aria-label="Search"> <button class="btn btn-outline-primary my-2 my-sm-0"
+                        type="submit">Search</button></form>
+            </div>
+        </nav>
+        <div class="carousel-padding" id="margin-carousel">
+            <div class="carousel"><input type="radio" name="carousel" id="1" checked="checked"
+                    class="carousel__activator"> <input type="radio" name="carousel" id="2" class="carousel__activator">
+                <input type="radio" name="carousel" id="3" class="carousel__activator"> <input type="radio"
+                    name="carousel" id="4" class="carousel__activator"> <input type="radio" name="carousel" id="5"
+                    class="carousel__activator">
+                <div class="carousel__controls"><label for="5"
+                        class="carousel__control carousel__control--previous"></label> <label for="2"
+                        class="carousel__control carousel__control--next"></label></div>
+                <div class="carousel__controls"><label for="1"
+                        class="carousel__control carousel__control--previous"></label> <label for="3"
+                        class="carousel__control carousel__control--next"></label></div>
+                <div class="carousel__controls"><label for="2"
+                        class="carousel__control carousel__control--previous"></label> <label for="4"
+                        class="carousel__control carousel__control--next"></label></div>
+                <div class="carousel__controls"><label for="3"
+                        class="carousel__control carousel__control--previous"></label> <label for="5"
+                        class="carousel__control carousel__control--next"></label></div>
+                <div class="carousel__controls"><label for="4"
+                        class="carousel__control carousel__control--previous"></label> <label for="1"
+                        class="carousel__control carousel__control--next"></label></div>
+                <div class="carousel__track">
+                    <div class="carousel__slide"><img
+                            src="https://i0.wp.com/www.pcgamespunch.com/wp-content/uploads/2013/09/Call-of-Duty-Black-OPS-Compressed.jpg?zoom=2&resize=324%2C160"
+                            loading="lazy"></div>
+                    <div class="carousel__slide"><img
+                            src="https://i0.wp.com/www.pcgamespunch.com/wp-content/uploads/2013/09/Hitman-2.jpg?zoom=2&resize=324%2C160"
+                            loading="lazy"></div>
+                    <div class="carousel__slide"><img class="img3"
+                            src="https://i0.wp.com/www.pcgamespunch.com/wp-content/uploads/2013/09/Fast-Furious-Showdown.jpg?zoom=2&resize=324%2C160"
+                            loading="lazy"></div>
+                    <div class="carousel__slide"><img
+                            src="https://i0.wp.com/www.pcgamespunch.com/wp-content/uploads/2017/10/Freedom-Fighters-7.jpg?zoom=2&resize=324%2C160"
+                            loading="lazy"></div>
+                    <div class="carousel__slide"><img class="img5"
+                            src="https://i0.wp.com/www.pcgamespunch.com/wp-content/uploads/2015/07/maxresdefault.jpg?zoom=2&resize=324%2C160"
+                            loading="lazy"></div>
+                </div>
+                <div class="carousel__indicators"><label for="1" class="carousel__indicator"></label> <label for="2"
+                        class="carousel__indicator"></label> <label for="3" class="carousel__indicator"></label> <label
+                        for="4" class="carousel__indicator"></label> <label for="5" class="carousel__indicator"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/home.js"></script>
+    <script>!function (e) { function t(t) { for (var n, l, p = t[0], a = t[1], f = t[2], c = 0, s = []; c < p.length; c++)l = p[c], Object.prototype.hasOwnProperty.call(o, l) && o[l] && s.push(o[l][0]), o[l] = 0; for (n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n]); for (i && i(t); s.length;)s.shift()(); return u.push.apply(u, f || []), r() } function r() { for (var e, t = 0; t < u.length; t++) { for (var r = u[t], n = !0, p = 1; p < r.length; p++) { var a = r[p]; 0 !== o[a] && (n = !1) } n && (u.splice(t--, 1), e = l(l.s = r[0])) } return e } var n = {}, o = { 1: 0 }, u = []; function l(t) { if (n[t]) return n[t].exports; var r = n[t] = { i: t, l: !1, exports: {} }; return e[t].call(r.exports, r, r.exports, l), r.l = !0, r.exports } l.m = e, l.c = n, l.d = function (e, t, r) { l.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: r }) }, l.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, l.t = function (e, t) { if (1 & t && (e = l(e)), 8 & t) return e; if (4 & t && "object" == typeof e && e && e.__esModule) return e; var r = Object.create(null); if (l.r(r), Object.defineProperty(r, "default", { enumerable: !0, value: e }), 2 & t && "string" != typeof e) for (var n in e) l.d(r, n, function (t) { return e[t] }.bind(null, n)); return r }, l.n = function (e) { var t = e && e.__esModule ? function () { return e.default } : function () { return e }; return l.d(t, "a", t), t }, l.o = function (e, t) { return Object.prototype.hasOwnProperty.call(e, t) }, l.p = "/pcgames/"; var p = this.webpackJsonpwebdevelopment_bootstrap = this.webpackJsonpwebdevelopment_bootstrap || [], a = p.push.bind(p); p.push = t, p = p.slice(); for (var f = 0; f < p.length; f++)t(p[f]); var i = a; r() }([])</script>
+    <script src="./pcgames/static/js/2.1b9a871c.chunk.js"></script>
+    <script src="./pcgames/static/js/main.36bd07df.chunk.js"></script>
+</body>
+
+</html>

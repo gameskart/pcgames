@@ -1,0 +1,108 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+    onmousedown="dropMenuFuncRemove1(); dropMenuFuncRemove2(); dropMenuFuncRemove3(); stopMainMenu();"
+    onmouseleave="dropMenuFuncRemove1(); dropMenuFuncRemove2(); dropMenuFuncRemove3(); stopMainMenu();">
+    <a class="navbar-brand" href="./">GAMESKART</a>
+    <button onclick="paddingAllItems();" class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+        <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </button>
+    {{!-- aria-label="Toggle navigation" --}}
+    {{!-- aria-expanded="false" --}}
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" onmouseenter="dropMenuFuncRemove1(); dropMenuFuncRemove2(); stopMainMenu();">
+                <a class="nav-link" href="./">HOME <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item dropdown"
+                onmouseover="dropMenuFuncAdd1(); dropMenuFuncRemove2(); dropMenuFuncRemove3();"
+                onload="dropMenuFuncRemove1();" id="dropdown1">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    SIZE
+                </a>
+                <div id="dropdown-Menu" class="dropdown-menu stop-menu1 remove-menu "
+                    onmouseleave="dropMenuFuncRemove1();"
+                    onclick="dropMenuFuncAdd1(); dropMenuFuncRemove2(); dropMenuFuncRemove3();"
+                    aria-labelledby="navbarDropdown1">
+                    <a class="dropdown-item" id="item" href="#">Adventure</a>
+                    <a class="dropdown-item" id="item" href="#">Puzzle</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+                    <a class="dropdown-item" id="item" href="#">Action</a>
+                    <a class="dropdown-item" id="item" href="#">Sports</a>
+                    <a class="dropdown-item" id="item" href="#">Racing</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+                    <a class="dropdown-item" id="item" href="#">Shooting</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown" onclick="dropMenuFuncRemove1(); dropMenuFuncAdd2(); dropMenuFuncRemove3();"
+                onmouseover="dropMenuFuncRemove1(); dropMenuFuncAdd2(); dropMenuFuncRemove3(); " id="dropdown2">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    PACKS
+                </a>
+                <div class="dropdown-menu menu-2 stop-menu2 " onload="dropMenuFuncRemove2();"
+                    onmouseenter="stopMainMenu();" aria-labelledby="navbarDropdown2">
+                    <a class="dropdown-item" href="#">Adventure</a>
+                    <a class="dropdown-item" href="#">Puzzle</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Sports</a>
+                    <a class="dropdown-item" href="#">Racing</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+                    <a class="dropdown-item" href="#">Shooting</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown"
+                onmouseover="dropMenuFuncRemove1(); dropMenuFuncRemove2(); dropMenuFuncAdd3();" id="dropdown1">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    CATEGORIES
+                </a>
+                <div class="dropdown-menu menu-3 stop-menu3" onload="dropMenuFuncRemove3();"
+                    onmouseenter="stopMainMenu();" aria-labelledby="navbarDropdown1">
+                    <a class="dropdown-item" href="#">Adventure</a>
+                    <a class="dropdown-item" href="#">Puzzle</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Sports</a>
+                    <a class="dropdown-item" href="#">Racing</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+                    <a class="dropdown-item" href="#">Shooting</a>
+                </div>
+            </li>
+            <li class="nav-item" onmouseenter="dropMenuFuncRemove3(); ">
+                <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item login-btn">
+                <a class="nav-link login" href="#">LOGIN</a>
+            </li>
+
+
+            {{!-- <li class="nav-item dropdown" onmouseover="dropMenuFuncAdd2();" id="dropdown2">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    PC Games 2
+                </a>
+                <div class="dropdown-menu stop-menu2 remove-menu displayShow2" onmouseenter="stopMainMenu();"
+                    aria-labelledby="navbarDropdown2">
+                    <a class="dropdown-item" href="#">qq</a>
+                    <a class="dropdown-item" href="#">Another</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something</a>
+                </div>
+            </li> --}}
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
